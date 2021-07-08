@@ -24,9 +24,19 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-6">
                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-dark text-uppercase">Lista stampata a ogni aggiunta di mail</li>
                         <li class="list-group-item" v-for="eMail in eMails">{{eMail}}</li>
+                    </ul>                
+                </div>
+
+                <div class="col-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-dark text-uppercase">Lista stampata quando la length dell'array raggiunge eMailsQty</li>
+                        <li class="list-group-item" 
+                        v-for="eMail in eMails"
+                        v-if="eMails.length === eMailsQty">{{eMail}}</li>
                     </ul>                
                 </div>
             </div>

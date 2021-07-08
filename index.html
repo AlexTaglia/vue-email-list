@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" /> 
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    
+    <title>Vue Email List</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" v-for="eMail in eMails">{{eMail}}</li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="./js/script.js"></script>
+
+
+</body>
+
+</html>
